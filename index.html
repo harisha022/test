@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, sans-serif;
+  }
+
+  .gif-container {
+    display: inline-block;
+    position: relative;
+    margin: 50px;
+  }
+
+  .moving-gif1 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    animation: moveRight 5s linear infinite;
+  }
+  .moving-gif2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    animation: moveRight 5s linear infinite;
+  }
+
+  @keyframes moveRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+</style>
+</head>
+<body>
+    <img src="pngtree-modern-double.jpg">
+  <div class="gif-container">
+    <img src="MOUSE+RUN.gif" alt="Moving GIF 1" class="moving-gif1">
+  </div>
+  <div class="gif-container">
+    <img src="MOUSE+RUN.gif" alt="Moving GIF 2" class="moving-gif2">
+  </div>
+  <div class="gif-container">
+    <img src="MOUSE+RUN.gif" alt="Moving GIF 3" class="moving-gif2">
+  </div>
+</body>
+</html>
